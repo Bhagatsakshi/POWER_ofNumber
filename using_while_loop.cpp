@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include<iostream>
+using namespace std;
 int main() {
-    int base, exp;
+    int base,exp;
     long int result=1;
-    printf("Enter a base number: ");
-    scanf("%d", &base);
+    cout<<"Enter a base number: ";
+    cin>>base;
     printf("Enter an exponent: ");
-    scanf("%d", &exp);
-
-    while (exp != 0) {
-        result *= base;
+    cin>>exp;
+    while(exp!=0) 
+    {
+        result*=base;
         --exp;
     }
-    printf("Answer = %ld", result);
+    cout<<result;
     return 0;
 }
