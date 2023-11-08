@@ -1,12 +1,13 @@
 #include<math.h>
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main() {
     float base,exp,result;
-    printf("Enter a base: ");
-    scanf("%f",&base);
-    printf("Enter an expo: ");
-    scanf("%f",&exp);
+    cout<<"Enter a base number: ";
+    cin>>base;
+    printf("Enter an exponent: ");
+    cin>>exp;
     result = pow(base, exp);
-    printf("%f^%f = %f",base,exp,result);
+    cout<<base<<exp<<result;
     return 0;
 }
